@@ -1,0 +1,78 @@
+body {
+  /* z-index: 998;
+  position: relative; */
+  /* font-family: 'Montserrat'; */
+  color: #543310;
+}
+
+header {
+  position: relative;
+  z-index: 999;
+  background-color: #F8F4E1;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+
+.bg-color-1 {
+  background-color: #F8F4E1;
+}
+
+.bg-color-4{
+  background-color: #74512D;
+}
+
+.navigasi{
+  color: #543310;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-right: 2.5em;
+}
+
+.detail_image{
+  width: 60%;
+  margin: auto;
+}
+
+.detail_header{
+  font-weight: bolder;
+  color: #74512D;
+}
+
+.navbar-brand {
+  color: #343a40 !important;
+}
+
+#list_pelatihan{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#item_pelatihan{
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F4E1;
+  /* width: 30%; */
+}
+
+#item_pelatihan p,h1,h2,h3,h4,h5,h6{
+  color: #74512D;
+}
+
+#tombol_pelatihan{
+  display: flex;
+}
+
+.custom-btn{
+  background-color: #543310;
+  color: #fff;
+  border: 2px solid #543310;
+  
+}
+
+footer {
+  background-color: #74512D;
+}
+
+footer a {
+  margin: 0;
+  text-decoration: none;
+}
