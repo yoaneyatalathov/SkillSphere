@@ -20,9 +20,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       trainingItem.innerHTML = `
                 <img src="../public/img/bg-masthead.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <p class="text-muted">Durasi: ${training.durasi} Minggu</p>
-                    <h5 class="nama_pelatihan">${training.nama_pelatihan}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted penyelenggara">${training.penyelenggara}</h6>
+                    <p>Durasi: ${training.durasi} Minggu</p>
+                    <h6 class="">Kelompok Umur: ${training.kelompok_umur} Tahun</h6>
+                    <h4 class="nama_pelatihan">${training.nama_pelatihan}</h4>
+                    <h5 class="card-subtitle mb-2 text-muted penyelenggara">${training.penyelenggara}</h5>
                     <p class="text-muted deskripsi">${training.deskripsi}</p>
                     <p class="fw-bolder kategori">Kategori : ${training.kategori}</p>
                 </div>
