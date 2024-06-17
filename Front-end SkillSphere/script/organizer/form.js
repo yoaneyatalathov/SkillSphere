@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nama_pelatihan: document.getElementById('nama_pelatihan').value,
             penyelenggara: document.getElementById('penyelenggara').value,
             durasi: document.getElementById('duration').value,
+            kelompok_umur: document.getElementById('kelompok_umur').value,
             kategori: document.getElementById('category').value,
             deskripsi: document.getElementById('description').value,
             persyaratan: requirements,
