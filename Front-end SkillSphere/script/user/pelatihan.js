@@ -1,24 +1,26 @@
-const urlSearchParams = new URLSearchParams(window.location.search);
-const id = urlSearchParams.get('id');
+import { checkLoginAndUser, handleLogout } from "./authUtil.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const listPelatihan = document.getElementById("list_pelatihan");
+  const listPelatihan = document.getElementById("list_pelatihan");
 
-    try {
-        const response = await fetch("http://localhost:3000/trainings");
-        if (!response.ok) {
-            throw new Error("Network response was not ok " + response.statusText);
-        }
+  try {
+    const loggedInUser = await checkLoginAndUser();
+    console.log(loggedInUser);
 
-        const trainings = await response.json();
+    const response = await fetch("http://localhost:3000/trainings");
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
 
-        trainings.forEach(training => {
-            const trainingItem = document.createElement("div");
-            trainingItem.classList.add("card", "mb-3", "col-4");
-            trainingItem.innerHTML = `
+    const trainings = await response.json();
+
+    trainings.forEach((training) => {
+      const trainingItem = document.createElement("div");
+      trainingItem.classList.add("card", "mb-3", "col-4");
+      trainingItem.innerHTML = `
                 <img src="../public/img/bg-masthead.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <p class="text-muted">Durasi: ${training.durasi}</p>
+                    <p class="text-muted">Durasi: ${training.durasi} Minggu</p>
                     <h5 class="nama_pelatihan">${training.nama_pelatihan}</h5>
                     <h6 class="card-subtitle mb-2 text-muted penyelenggara">${training.penyelenggara}</h6>
                     <p class="text-muted deskripsi">${training.deskripsi}</p>
@@ -29,11 +31,18 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <a href="detail.html?id=${training.id}" class="border border-dark btn custom-btn card-link">Baca selengkapnya</a>
                 </div>
             `;
-            listPelatihan.appendChild(trainingItem);
-        });
+      listPelatihan.appendChild(trainingItem);
+    });
 
-    } catch (error) {
-        console.error("Error fetching trainings:", error);
-        listPelatihan.innerHTML = `<p>Error fetching trainings: ${error.message}</p>`;
-    }
+    // Tambahkan event listener untuk link logout
+    const logoutLink = document.getElementById("logoutLink");
+    logoutLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Mencegah link untuk berpindah ke halaman lain
+        handleLogout(); // Panggil fungsi handleLogout saat link logout ditekan
+    });
+
+  } catch (error) {
+    console.error("Error fetching trainings:", error);
+    listPelatihan.innerHTML = `<p>Error fetching trainings: ${error.message}</p>`;
+  }
 });
