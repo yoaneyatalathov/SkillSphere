@@ -16,11 +16,14 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
             throw new Error('Invalid username or password');
         }
 
-        // Jika login berhasil, redirect ke halaman index.html
-        window.location.href = '../index.html';
+        // Simpan informasi pengguna yang berhasil login di session storage
+        sessionStorage.setItem('loggedInUser', JSON.stringify(user));
+
+        // Redirect ke halaman index.html
+        window.location.href = 'pelatihan.html';
 
     } catch (error) {
         console.error('Login error:', error);
-        document.getElementById('errorMessage').textContent = 'Login failed. Please check your credentials.';
+        document.getElementById('errorMessage').textContent = 'login gagal, username atau password salah';
     }
-})
+});
