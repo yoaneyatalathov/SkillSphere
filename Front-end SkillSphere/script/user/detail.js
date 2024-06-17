@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         <h3 class="card-title text-center">${training.nama_pelatihan}</h3>
         <h4 class="card-subtitle mb-2 fw-light text-center">${training.penyelenggara}</h4>
         <p class="card-text"><strong>Durasi:</strong> ${training.durasi} Minggu</p>
+        <p class="card-text"><strong>Kelompok Umur:</strong> ${training.kelompok_umur} Tahun</p>
         <p class="card-text"><strong>Kategori:</strong> ${training.kategori}</p>
         <p class="card-text"><strong>Deskripsi:</strong> ${training.deskripsi}</p>
         <h5>Persyaratan:</h5>
