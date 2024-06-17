@@ -1,3 +1,5 @@
+import { checkLoginAndUser } from "./authUtil.js";
+
 const urlSearchParams = new URLSearchParams(window.location.search);
 const id = urlSearchParams.get('id');
 
@@ -5,6 +7,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const detailItem = document.getElementById("detail-item");
 
   try {
+    await checkLoginAndUser();
+
     const response = await fetch(`http://localhost:3000/trainings/${id}`);
     
     console.log(response)
@@ -26,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       <div class="card-body">
         <h3 class="card-title text-center">${training.nama_pelatihan}</h3>
         <h4 class="card-subtitle mb-2 fw-light text-center">${training.penyelenggara}</h4>
-        <p class="card-text"><strong>Durasi:</strong> ${training.durasi}</p>
+        <p class="card-text"><strong>Durasi:</strong> ${training.durasi} Minggu</p>
         <p class="card-text"><strong>Kategori:</strong> ${training.kategori}</p>
         <p class="card-text"><strong>Deskripsi:</strong> ${training.deskripsi}</p>
         <h5>Persyaratan:</h5>
