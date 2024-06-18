@@ -1,45 +1,67 @@
+Here's the updated and concise version of the README.md in English:
+
+```markdown
 # SkillSphere
 
-Selamat datang di repositori SkillSphere! Repositori ini berisi kode sumber untuk proyek SkillSphere.
+Welcome to the SkillSphere repository! This repository contains the source code for the SkillSphere project.
 
 ## Getting Started
 
-Untuk mulai menggunakan proyek ini secara lokal, silahkan ikuti langkah-langkah berikut.
+To get started with this project locally, please follow these steps.
 
-### Prasyarat
+### Prerequisites
 
-Pastikan Anda telah menginstal Git dan Visual Studio Code di komputer Anda. Jika belum, Anda dapat mengunduh dan menginstalnya dari tautan berikut:
+Ensure you have Git and Visual Studio Code installed on your computer. If not, download and install them from the following links:
 - [Git](https://git-scm.com/downloads)
 - [Visual Studio Code](https://code.visualstudio.com/Download)
 
-### Langkah-langkah
+### Steps
 
-1. **Clone Repositori**
+1. **Clone the Repository**
 
-   Pertama-tama, clone repositori ini ke komputer Anda dengan menjalankan perintah berikut di terminal atau command prompt:
+   First, clone this repository to your computer by running the following command in the terminal or command prompt:
 
    ```bash
    git clone https://github.com/yoaneyatalathov/SkillSphere
-2. **Buka Folder Project**
+   ```
 
-   Setelah repositori selesai di-clone, buka folder project dengan menjalankan perintah berikut:
+2. **Open the Project Folder**
+
+   After cloning the repository, navigate to the project folder with the following command:
 
    ```bash
    cd SkillSphere
-3. **Buka Project di Visual Studio Code**
-   
-   Buka Visual Studio Code, lalu buka folder project SkillSphere yang telah Anda clone.
-4. **Instalasi Live Server**
-   
-   Jika Anda belum memiliki ekstensi Live Server, instal terlebih dahulu:
-   Buka Visual Studio Code.
-   Pergi ke Extensions dengan mengklik ikon Extensions di sidebar kiri atau dengan menekan Ctrl+Shift+X.
-   Cari "Live Server" di kotak pencarian.
-   Klik Install pada ekstensi Live Server yang dibuat oleh Ritwick Dey.
-5. **Menjalankan project dengan Live Server**
+   ```
 
-   Setelah ekstensi Live Server terinstal:
-   Navigasi ke file root.
-   Klik kanan.
-   Pilih "Open with Live Server".
-   Browser akan otomatis terbuka dan menampilkan website project.
+3. **Open Project in Visual Studio Code**
+
+   Open Visual Studio Code, then open the `SkillSphere` project folder that you cloned.
+
+4. **Install Live Server**
+
+   If you don't have the Live Server extension, install it first:
+   - Open Visual Studio Code.
+   - Go to Extensions by clicking the Extensions icon in the sidebar or by pressing `Ctrl+Shift+X`.
+   - Search for "Live Server" in the search box.
+   - Click `Install` on the Live Server extension by Ritwick Dey.
+
+5. **Run the Project with Live Server**
+
+   After installing Live Server:
+   - Navigate to the root file.
+   - Right-click.
+   - Select "Open with Live Server".
+   
+   The browser will automatically open and display the project website.
+
+## Contributing
+
+We welcome contributions from everyone. To contribute, please follow these steps:
+
+1. Fork this repository.
+2. Create a new feature branch (`git checkout -b new-feature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin new-feature`).
+5. Open a Pull Request.
+
+This README provides a concise guide for getting started with the project using Visual Studio Code and the Live Server extension.
