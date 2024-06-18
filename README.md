@@ -30,9 +30,16 @@ Pastikan Anda telah menginstal Git dan Visual Studio Code di komputer Anda. Jika
    
    Buka Visual Studio Code, lalu buka folder project SkillSphere yang telah Anda clone.
 4. **Instalasi Live Server**
+   
    Jika Anda belum memiliki ekstensi Live Server, instal terlebih dahulu:
-
    Buka Visual Studio Code.
    Pergi ke Extensions dengan mengklik ikon Extensions di sidebar kiri atau dengan menekan Ctrl+Shift+X.
    Cari "Live Server" di kotak pencarian.
    Klik Install pada ekstensi Live Server yang dibuat oleh Ritwick Dey.
+5. **Menjalankan project dengan Live Server**
+
+   Setelah ekstensi Live Server terinstal:
+   Navigasi ke file root.
+   Klik kanan.
+   Pilih "Open with Live Server".
+   Browser akan otomatis terbuka dan menampilkan website project.
