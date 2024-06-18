@@ -1,6 +1,3 @@
-Here's the updated and concise version of the README.md in English:
-
-```markdown
 # SkillSphere
 
 Welcome to the SkillSphere repository! This repository contains the source code for the SkillSphere project.
