@@ -8,7 +8,9 @@ Untuk mulai menggunakan proyek ini secara lokal, silahkan ikuti langkah-langkah 
 
 ### Prasyarat
 
-Pastikan Anda telah menginstal Git di komputer Anda. Jika belum, Anda dapat mengunduh dan menginstalnya dari [sini](https://git-scm.com/downloads).
+Pastikan Anda telah menginstal Git dan Visual Studio Code di komputer Anda. Jika belum, Anda dapat mengunduh dan menginstalnya dari tautan berikut:
+- [Git](https://git-scm.com/downloads)
+- [Visual Studio Code](https://code.visualstudio.com/Download)
 
 ### Langkah-langkah
 
@@ -18,23 +20,19 @@ Pastikan Anda telah menginstal Git di komputer Anda. Jika belum, Anda dapat meng
 
    ```bash
    git clone https://github.com/yoaneyatalathov/SkillSphere
-Buka Folder Project
+2. **Buka Folder Project**
 
-Setelah repositori selesai di-clone, buka folder project dengan menjalankan perintah berikut:
+   Setelah repositori selesai di-clone, buka folder project dengan menjalankan perintah berikut:
 
-bash
-Salin kode
-cd SkillSphere
-Buka di Browser
+   ```bash
+   cd SkillSphere
+3. **Buka Project di Visual Studio Code**
+   
+   Buka Visual Studio Code, lalu buka folder project SkillSphere yang telah Anda clone.
+4. **Instalasi Live Server**
+   Jika Anda belum memiliki ekstensi Live Server, instal terlebih dahulu:
 
-Anda dapat membuka file project di browser dengan dua cara:
-
-Menggunakan GitHub
-
-Buka folder project Anda di GitHub, klik kanan pada file index.html (atau file utama lainnya), lalu pilih "Show in Browser".
-
-Menggunakan Extension Live Server
-
-Jika Anda menggunakan editor seperti Visual Studio Code, Anda dapat menggunakan extension Live Server. Klik kanan pada file index.html (atau file utama lainnya), lalu pilih "Open with Live Server".
-
-Dengan demikian, browser akan otomatis terbuka dan Anda bisa mengakses aplikasinya.
+   Buka Visual Studio Code.
+   Pergi ke Extensions dengan mengklik ikon Extensions di sidebar kiri atau dengan menekan Ctrl+Shift+X.
+   Cari "Live Server" di kotak pencarian.
+   Klik Install pada ekstensi Live Server yang dibuat oleh Ritwick Dey.
