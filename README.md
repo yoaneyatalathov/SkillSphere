@@ -2,6 +2,9 @@
 
 Welcome to the SkillSphere repository! This repository contains the source code for the SkillSphere project.
 
+### NOTE : Before running the front-end project, please RUN the back-end project first, which you can see in the following link: 
+[Git](https://github.com/Faqyh/Back-end_SkillSPhere)
+
 ## Getting Started
 
 To get started with this project locally, please follow these steps.
